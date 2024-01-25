@@ -4,7 +4,7 @@ import {DateTimePretty} from './DateTime';
 const Video = ({url, date}) => {
   return (
     <div className="video">
-      <iframe src={url} style={{border: 0, }} allow="autoplay; encrypted-media" allowFullScreen></iframe>
+      <iframe src={url} style={{border: 0, }} allow="autoplay; encrypted-media" allowFullScreen title={props.url}></iframe>
       <DateTimePretty date={date} />
     </div>
   );
